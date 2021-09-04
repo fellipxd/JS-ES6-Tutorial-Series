@@ -42,7 +42,7 @@ let func = new Function("x", "y", "return x*y;");
 
 console.log(func(5, 6));
 
-// 6 = 6x5x4x3x2x1
+// reocurring function
 function factorial(num) {
   if (num <= 0) {
     return 1;
@@ -58,6 +58,7 @@ console.log(factorial(6));
   console.log("I'm an anonymous");
 })();
 
+// Arrow function
 // parameters
 // fat arrow notation
 // statements

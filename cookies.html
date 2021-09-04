@@ -14,14 +14,24 @@
 
         // console.log(localStorage.getItem("user"));
 
-        // localStorage.clear();
+        // localStorage.clear()f;
 
-        // document.cookie = "username=Tharun;";
+        document.cookie = "username=Tharun;";
 
+
+        // assign expiration date
         let expiration = new Date();
-        expiration.setMonth(expiration.getMonth() - 1);
+        expiration.setMonth(expiration.getMonth()  +1);
         document.cookie =
           "username=Tharun; expires=" + expiration.toUTCString() + "";
+ 
+
+
+        //     // delete cookie
+        // let expiration = new Date();
+        // expiration.setMonth(expiration.getMonth() - 1);
+        // document.cookie =
+        //   "username=Tharun; expires=" + expiration.toUTCString() + "";
       }
     </script>
   </head>
